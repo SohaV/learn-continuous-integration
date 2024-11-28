@@ -5,6 +5,10 @@ on:
     branches:
       - deploy
 
+  pull_request:
+    branches:
+      - deploy
+
 jobs:
   "setup-database":
     runs-on: self-hosted
