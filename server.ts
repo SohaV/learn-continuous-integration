@@ -22,6 +22,7 @@ const mongoDB = 'mongodb://127.0.0.1:27017/my_library_db';
 mongoose.connect(mongoDB);
 const db = mongoose.connection;
 
+// MongoDb error handling
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 db.on('connected', () => {
   console.log('Connected to database');
