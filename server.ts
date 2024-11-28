@@ -17,6 +17,7 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
 
+// Connecting to MongoDb
 const mongoDB = 'mongodb://127.0.0.1:27017/my_library_db';
 mongoose.connect(mongoDB);
 const db = mongoose.connection;
