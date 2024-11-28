@@ -35,6 +35,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 
+// Display home page
 app.get('/home', (_, res: Response) => {
   Home.show_home(res);
 });
